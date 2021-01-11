@@ -13,6 +13,7 @@
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^6.3.2",
     "electron-packager": "^15.0.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.0",
     "http-server": "^0.12.3",
     "jasmine-core": "^3.6.0",
@@ -30,6 +31,7 @@
   },
   "scripts": {
     "build": "webpack",
+    "deploy": "gh-pages -d build",
     "lint": "jshint src/js/*.js test/unit/*.js",
     "prestart": "npm install",
     "start": "webpack serve",
